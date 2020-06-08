@@ -1195,6 +1195,27 @@ func (s *IssueService) GetTransitions(id string) ([]Transition, *Response, error
 	return s.GetTransitionsWithContext(context.Background(), id)
 }
 
+// GetTransitionByNameWithContext wraps GetTransitionsWithContext using the background context.
+func (s *IssueService) GetTransitionByNameWithContext(ctx context.Context, ticketID, transitionName string) (*Transition, *Response, error) {
+	transitions, resp, err := s.GetTransitionsWithContext(ctx, ticketID)
+	if err != nil {
+		return nil, resp, err
+	}
+
+	for _, transition := range transitions {
+		if transition.Name == transitionName {
+			return &transition, resp, err
+		}
+	}
+
+	return nil, resp, fmt.Errorf("transtition '%s' is not available for '%s'", transitionName, ticketID)
+}
+
+// GetTransitionByName wraps GetTransitionsWithContext using the background context.
+func (s *IssueService) GetTransitionByName(ticketID, transitionName string) (*Transition, *Response, error) {
+	return s.GetTransitionByNameWithContext(context.Background(), ticketID, transitionName)
+}
+
 // DoTransitionWithContext performs a transition on an issue.
 // When performing the transition you can update or set other issue fields.
 //
