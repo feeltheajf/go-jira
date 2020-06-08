@@ -1,8 +1,8 @@
 # go-jira
 
-[![GoDoc](https://godoc.org/github.com/andygrunwald/go-jira?status.svg)](https://godoc.org/github.com/andygrunwald/go-jira)
+[![GoDoc](https://godoc.org/github.com/feeltheajf/go-jira?status.svg)](https://godoc.org/github.com/feeltheajf/go-jira)
 [![Build Status](https://travis-ci.org/andygrunwald/go-jira.svg?branch=master)](https://travis-ci.org/andygrunwald/go-jira)
-[![Go Report Card](https://goreportcard.com/badge/github.com/andygrunwald/go-jira)](https://goreportcard.com/report/github.com/andygrunwald/go-jira)
+[![Go Report Card](https://goreportcard.com/badge/github.com/feeltheajf/go-jira)](https://goreportcard.com/report/github.com/feeltheajf/go-jira)
 
 [Go](https://golang.org/) client library for [Atlassian Jira](https://www.atlassian.com/software/jira).
 
@@ -27,7 +27,7 @@ This package is not Jira API complete (yet), but you can call every API endpoint
 It is go gettable
 
 ```bash
-go get github.com/andygrunwald/go-jira
+go get github.com/feeltheajf/go-jira
 ```
 
 For stable versions you can use one of our tags with [gopkg.in](http://labix.org/gopkg.in). E.g.
@@ -44,20 +44,20 @@ import (
 (optional) to run unit / example tests:
 
 ```bash
-cd $GOPATH/src/github.com/andygrunwald/go-jira
+cd $GOPATH/src/github.com/feeltheajf/go-jira
 go test -v ./...
 ```
 
 ## API
 
-Please have a look at the [GoDoc documentation](https://godoc.org/github.com/andygrunwald/go-jira) for a detailed API description.
+Please have a look at the [GoDoc documentation](https://godoc.org/github.com/feeltheajf/go-jira) for a detailed API description.
 
 The [latest Jira REST API documentation](https://docs.atlassian.com/jira/REST/latest/) was the base document for this package.
 
 ## Examples
 
 Further a few examples how the API can be used.
-A few more examples are available in the [GoDoc examples section](https://godoc.org/github.com/andygrunwald/go-jira#pkg-examples).
+A few more examples are available in the [GoDoc examples section](https://godoc.org/github.com/feeltheajf/go-jira#pkg-examples).
 
 ### Get a single issue
 
@@ -68,7 +68,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/andygrunwald/go-jira"
+	"github.com/feeltheajf/go-jira"
 )
 
 func main() {
@@ -120,7 +120,7 @@ Jira [deprecated this authentication method.](https://developer.atlassian.com/cl
 
 If you want to connect via OAuth to your Jira Cloud instance checkout the [example of using OAuth authentication with Jira in Go](https://gist.github.com/Lupus/edafe9a7c5c6b13407293d795442fe67) by [@Lupus](https://github.com/Lupus).
 
-For more details have a look at the [issue #56](https://github.com/andygrunwald/go-jira/issues/56).
+For more details have a look at the [issue #56](https://github.com/feeltheajf/go-jira/issues/56).
 
 ### Create an issue
 
@@ -131,7 +131,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/andygrunwald/go-jira"
+	"github.com/feeltheajf/go-jira"
 )
 
 func main() {
@@ -184,7 +184,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/andygrunwald/go-jira"
+	"github.com/feeltheajf/go-jira"
 )
 
 func main() {
@@ -234,13 +234,13 @@ We ❤️ PR's
 
 Contribution, in any kind of way, is highly welcome!
 It doesn't matter if you are not able to write code.
-Creating issues or holding talks and help other people to use [go-jira](https://github.com/andygrunwald/go-jira) is contribution, too!
+Creating issues or holding talks and help other people to use [go-jira](https://github.com/feeltheajf/go-jira) is contribution, too!
 A few examples:
 
 * Correct typos in the README / documentation
 * Reporting bugs
 * Implement a new feature or endpoint
-* Sharing the love of [go-jira](https://github.com/andygrunwald/go-jira) and help people to get use to it
+* Sharing the love of [go-jira](https://github.com/feeltheajf/go-jira) and help people to get use to it
 
 If you are new to pull requests, checkout [Collaborating on projects using issues and pull requests / Creating a pull request](https://help.github.com/articles/creating-a-pull-request/).
 
@@ -270,7 +270,7 @@ git push --tags
 
 Manually copy/paste text from changelog (for this new version) into the release on Github.com. E.g.
 
-[https://github.com/andygrunwald/go-jira/releases/edit/v1.11.0](https://github.com/andygrunwald/go-jira/releases/edit/v1.11.0)
+[https://github.com/feeltheajf/go-jira/releases/edit/v1.11.0](https://github.com/feeltheajf/go-jira/releases/edit/v1.11.0)
 
 ## License
 
